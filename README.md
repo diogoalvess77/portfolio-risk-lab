@@ -213,3 +213,10 @@ GitHub Actions runs the test suite plus baseline, robustness and sensitivity smo
 ## Disclosure
 
 This is an educational project built with AI assistance. The methodology, code, tests, generated outputs and documentation are included so the work can be inspected and reproduced.
+
+
+## Live reports
+
+After enabling GitHub Pages from the `/docs` folder, the project reports are available at:
+
+`https://diogoalvess77.github.io/portfolio-risk-lab/`

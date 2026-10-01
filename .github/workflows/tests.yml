@@ -1,0 +1,33 @@
+name: Tests and smoke runs
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install project
+        run: python -m pip install -e ".[dev]"
+
+      - name: Run tests
+        run: python -m pytest -q
+
+      - name: Demo smoke run
+        run: portfolio-risk-lab --portfolios 1000 --output outputs/smoke
+
+      - name: Robustness smoke run
+        run: portfolio-risk-lab-robustness --experiments 12 --output outputs/robustness-smoke
+
+      - name: Sensitivity smoke run
+        run: portfolio-risk-lab-sensitivity --output outputs/sensitivity-smoke

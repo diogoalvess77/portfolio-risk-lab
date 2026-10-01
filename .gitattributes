@@ -1,0 +1,6 @@
+examples/**/*.html linguist-generated=true
+examples/**/*.png linguist-generated=true
+examples/**/*.csv linguist-generated=true
+docs/*_report.html linguist-generated=true
+docs/index.html linguist-generated=true
+*.pdf binary

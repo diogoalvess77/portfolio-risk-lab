@@ -1,4 +1,0 @@
-[console_scripts]
-portfolio-risk-lab = portfolio_risk_lab.cli:main
-portfolio-risk-lab-robustness = portfolio_risk_lab.robustness_cli:main
-portfolio-risk-lab-sensitivity = portfolio_risk_lab.sensitivity_cli:main
