@@ -1,0 +1,24 @@
+PROJECT NAME
+Portfolio Risk Lab | Python
+
+DESCRIPTION
+Built a reproducible portfolio optimisation and out-of-sample risk analysis pipeline in Python. The baseline samples 20,000 long-only allocations across five synthetic assets, computes a 40-point efficient frontier and compares equal-weight, minimum-volatility and maximum-Sharpe portfolios on a chronologically separated holdout. Extended the analysis across 250 independent synthetic market paths and three volatility regimes to measure holdout Sharpe distributions, strategy win rates, train-to-holdout estimation gaps and allocation-weight stability. Validated the implementation with 22 automated tests and reproducible reports.
+
+SKILLS
+Python
+Data Analysis
+Risk Management
+Portfolio Management
+Quantitative Analysis
+
+FEATURED TITLE
+Portfolio Risk Lab — Python
+
+FEATURED DESCRIPTION
+Portfolio optimisation, out-of-sample risk analysis and repeated robustness testing across 250 synthetic market paths.
+
+GITHUB REPOSITORY DESCRIPTION
+Portfolio optimisation, out-of-sample risk analysis and repeated robustness testing in Python.
+
+GITHUB TOPICS
+python, finance, quantitative-finance, portfolio-optimization, risk-management, monte-carlo, efficient-frontier, data-analysis, scipy, pandas

@@ -1,0 +1,7 @@
+# Numerical-library versions used to generate examples/demo; Python 3.13.5.
+# Optional exact-version install: python -m pip install -r requirements-tested.txt
+# For a more portable install, use the ranges in pyproject.toml via pip install -e .
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.17.0
+matplotlib==3.10.8

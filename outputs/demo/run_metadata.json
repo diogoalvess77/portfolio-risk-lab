@@ -1,0 +1,34 @@
+{
+  "synthetic_demo": true,
+  "data_file": "demo_prices.csv",
+  "data_sha256": "6fa342c3cb04fd8612814382f48153cac5ed76b6698300a5141a3ac2480b48cd",
+  "asset_count": 5,
+  "assets": [
+    "Demo_Equity_A",
+    "Demo_Equity_B",
+    "Demo_Bonds",
+    "Demo_Gold",
+    "Demo_REITs"
+  ],
+  "price_observations": 1261,
+  "sampled_portfolios": 20000,
+  "sampling_seed": 42,
+  "demo_generator_seed": 7,
+  "train_fraction": 0.8,
+  "periods_per_year": 252,
+  "risk_free_rate": 0.03,
+  "train_start": "2020-01-03",
+  "train_end": "2023-11-14",
+  "holdout_start": "2023-11-15",
+  "holdout_end": "2024-10-31",
+  "training_returns": 1008,
+  "holdout_returns": 252,
+  "execution": "initial allocation, then buy-and-hold; no costs",
+  "versions": {
+    "python": "3.14.8",
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  }
+}

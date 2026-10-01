@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "portfolio-risk-lab"
+version = "2.0.0"
+description = "Reproducible portfolio research with Monte Carlo allocation sampling and a chronological holdout."
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "pandas>=2,<3", "scipy>=1.10,<2", "matplotlib>=3.7,<4"]
+
+[project.scripts]
+portfolio-risk-lab = "portfolio_risk_lab.cli:main"
+portfolio-risk-lab-robustness = "portfolio_risk_lab.robustness_cli:main"
+portfolio-risk-lab-sensitivity = "portfolio_risk_lab.sensitivity_cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,16 @@
+strategy,asset,mean,std
+Equal weight,Demo_Equity_A,0.2,0.0
+Equal weight,Demo_Equity_B,0.2,0.0
+Equal weight,Demo_Bonds,0.2,0.0
+Equal weight,Demo_Gold,0.2,0.0
+Equal weight,Demo_REITs,0.2,0.0
+Minimum volatility,Demo_Equity_A,0.06699073924518571,0.010237637003027739
+Minimum volatility,Demo_Equity_B,0.012755659916597453,0.007901231723263924
+Minimum volatility,Demo_Bonds,0.788590132249468,0.01189574100273816
+Minimum volatility,Demo_Gold,0.12947901007563253,0.009834017125528529
+Minimum volatility,Demo_REITs,0.0021844585131163543,0.004245463342954183
+Maximum Sharpe,Demo_Equity_A,0.2477452473733082,0.29770128949460034
+Maximum Sharpe,Demo_Equity_B,0.12326943859386755,0.2215685581044548
+Maximum Sharpe,Demo_Bonds,0.2816895357003607,0.3351905587357187
+Maximum Sharpe,Demo_Gold,0.2366268183430546,0.28416219704487555
+Maximum Sharpe,Demo_REITs,0.11066895998940898,0.21141319769660077

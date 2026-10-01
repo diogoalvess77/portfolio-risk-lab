@@ -1,0 +1,90 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portfolio Risk Lab | Robustness report</title><style>
+body{font:15px/1.6 system-ui,sans-serif;color:#192B3E;background:#EDF2F6;margin:0}main{max-width:1080px;margin:auto;background:#fff;padding:36px}
+h1{font-size:38px;margin:6px 0}h2{margin-top:34px}.notice{padding:16px;background:#FFF4DB;border-left:4px solid #D68B26}
+.meta{color:#536479}.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:12px}th,td{padding:9px;border-bottom:1px solid #DEE5EC;text-align:right}th:first-child,td:first-child{text-align:left}
+img{width:100%;height:auto;margin:8px 0 22px}@media(max-width:650px){main{padding:20px}h1{font-size:28px}}
+</style><main><div class="meta">PORTFOLIO RISK LAB / ROBUSTNESS LAYER</div><h1>Repeated out-of-sample stress test</h1>
+<p class="notice">Synthetic research only. These experiments test methodology under repeated fictional market paths and do not forecast real investments.</p>
+<p>250 independent market paths · three rotating volatility regimes · chronological 80%/20% train/holdout split · no holdout data used during fitting.</p>
+<h2>Summary</h2><div class="scroll"><table class="dataframe metrics">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Runs</th>
+      <th>Mean holdout Sharpe</th>
+      <th>Median holdout Sharpe</th>
+      <th>5th pct Sharpe</th>
+      <th>95th pct Sharpe</th>
+      <th>Mean training Sharpe</th>
+      <th>Mean holdout-training gap</th>
+      <th>Mean total return</th>
+      <th>Mean ann. volatility</th>
+      <th>Mean max drawdown</th>
+      <th>Holdout win rate</th>
+    </tr>
+    <tr>
+      <th>strategy</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Equal weight</th>
+      <td>250</td>
+      <td>0.35</td>
+      <td>0.35</td>
+      <td>-1.34</td>
+      <td>2.17</td>
+      <td>0.28</td>
+      <td>0.07</td>
+      <td>7.01%</td>
+      <td>11.13%</td>
+      <td>-10.28%</td>
+      <td>38.80%</td>
+    </tr>
+    <tr>
+      <th>Minimum volatility</th>
+      <td>250</td>
+      <td>0.10</td>
+      <td>0.10</td>
+      <td>-1.81</td>
+      <td>2.02</td>
+      <td>0.09</td>
+      <td>0.01</td>
+      <td>3.37%</td>
+      <td>4.94%</td>
+      <td>-4.76%</td>
+      <td>33.20%</td>
+    </tr>
+    <tr>
+      <th>Maximum Sharpe</th>
+      <td>250</td>
+      <td>0.30</td>
+      <td>0.36</td>
+      <td>-1.59</td>
+      <td>1.96</td>
+      <td>0.75</td>
+      <td>-0.45</td>
+      <td>7.10%</td>
+      <td>12.08%</td>
+      <td>-11.40%</td>
+      <td>28.00%</td>
+    </tr>
+  </tbody>
+</table></div>
+<h2>Distribution, not one lucky path</h2><img src="robustness_holdout_sharpe.png"><img src="robustness_train_vs_holdout.png">
+<h2>Strategy win rates</h2><img src="robustness_win_rates.png">
+<h2>Weight stability</h2><img src="robustness_weight_stability.png">
+<h2>Interpretation</h2><ul><li>Repeated paths reduce dependence on one particular random seed.</li><li>Training Sharpe is an estimate; the train-vs-holdout plot makes estimation error visible.</li><li>Win rates are descriptive within this synthetic design, not claims of real-world superiority.</li><li>Weight dispersion highlights how optimisation can react strongly to noisy sample estimates.</li></ul>
+</main></html>

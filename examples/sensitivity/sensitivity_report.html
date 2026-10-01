@@ -1,0 +1,79 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portfolio Risk Lab | Sensitivity</title><style>body{font:15px/1.6 system-ui,sans-serif;color:#192B3E;background:#EDF2F6;margin:0}main{max-width:1000px;margin:auto;background:#fff;padding:36px}img{width:100%;height:auto}table{border-collapse:collapse;width:100%}th,td{padding:9px;border-bottom:1px solid #ddd;text-align:right}th:first-child,td:first-child{text-align:left}.notice{padding:14px;background:#FFF4DB;border-left:4px solid #D68B26}</style>
+<main><h1>Assumption sensitivity</h1><p class="notice">Synthetic demonstration only. The grid varies modelling assumptions on one reproducible fictional path.</p><p>Train/holdout splits: 70/30, 80/20 and 90/10. Annual risk-free inputs: 0%, 3% and 5%.</p><table class="dataframe metrics">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>strategy</th>
+      <th>Equal weight</th>
+      <th>Maximum Sharpe</th>
+      <th>Minimum volatility</th>
+    </tr>
+    <tr>
+      <th>train_fraction</th>
+      <th>risk_free_rate</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="3" valign="top">0.7</th>
+      <th>0.00</th>
+      <td>1.490</td>
+      <td>1.669</td>
+      <td>2.434</td>
+    </tr>
+    <tr>
+      <th>0.03</th>
+      <td>1.215</td>
+      <td>1.176</td>
+      <td>1.816</td>
+    </tr>
+    <tr>
+      <th>0.05</th>
+      <td>1.036</td>
+      <td>0.976</td>
+      <td>1.415</td>
+    </tr>
+    <tr>
+      <th rowspan="3" valign="top">0.8</th>
+      <th>0.00</th>
+      <td>1.534</td>
+      <td>1.688</td>
+      <td>2.770</td>
+    </tr>
+    <tr>
+      <th>0.03</th>
+      <td>1.250</td>
+      <td>1.050</td>
+      <td>2.170</td>
+    </tr>
+    <tr>
+      <th>0.05</th>
+      <td>1.065</td>
+      <td>0.812</td>
+      <td>1.780</td>
+    </tr>
+    <tr>
+      <th rowspan="3" valign="top">0.9</th>
+      <th>0.00</th>
+      <td>2.444</td>
+      <td>1.647</td>
+      <td>0.957</td>
+    </tr>
+    <tr>
+      <th>0.03</th>
+      <td>2.169</td>
+      <td>1.422</td>
+      <td>0.353</td>
+    </tr>
+    <tr>
+      <th>0.05</th>
+      <td>1.991</td>
+      <td>1.468</td>
+      <td>-0.039</td>
+    </tr>
+  </tbody>
+</table><img src="sensitivity_sharpe.png"><p>The purpose is not to find a preferred setting, but to show how conclusions can move when modelling assumptions change.</p></main></html>

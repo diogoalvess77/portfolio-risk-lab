@@ -1,0 +1,9 @@
+{
+  "synthetic": true,
+  "source": "Local geometric Brownian demonstration generator",
+  "seed": 7,
+  "currency": "Fictional common denomination",
+  "volatility_scale": 1.0,
+  "drift_shift": 0.0,
+  "notes": "Generic weekday dates; not actual market prices."
+}
